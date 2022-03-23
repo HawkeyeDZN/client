@@ -28,7 +28,7 @@ function register(event) {
 
   }
 
-  fetch('http://localhost:3000/register', {
+  fetch('https://goncharov-server.herokuapp.com/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'

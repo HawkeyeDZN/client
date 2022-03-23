@@ -17,7 +17,7 @@ function login(event) {
   
   
 
-  fetch('http://localhost:3000/login', {
+  fetch('https://goncharov-server.herokuapp.com/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'
