@@ -93,12 +93,12 @@
         </div>
         <form class="modal__form" action="#">
           <label class="modal__label">
-            Имя пользователя или адрес электронной почты*
-            <input class="modal__input" type="text" required>
+            Имя пользователя*
+            <input id="name" class="modal__input" type="text" required>
           </label>
           <label class="modal__label">
             Пароль*
-            <input class="modal__input" type="text" required>
+            <input id="password" class="modal__input" type="password" required>
           </label>
           <p class="modal__text">Пароль будет отправлен на ваш адрес электронной почты.</p>
           <p class="modal__text">Ваши персональные данные будут использоваться для поддержки вашего использования на этом веб-сайте, для управления
@@ -107,7 +107,7 @@
             <input type="checkbox">
             Согласен с правилами и условиями
           </label>
-          <button class="modal__btn" type="submit">Регистрация</button>
+          <button onclick="register(event)" class="modal__btn">Регистрация</button>
         </form>
       </div>
     </section>
@@ -233,7 +233,8 @@
 
 
 
-  <script src="js/main.min.js"></script>
+  
 </body>
-
+<script src="js/main.min.js"></script>
+<script src="js/register_user.js"></script>
 </html>

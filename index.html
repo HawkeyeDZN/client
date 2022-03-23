@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Store</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="js\wow.min.js"></script>
   <script>
     new WOW().init();
@@ -768,8 +768,8 @@
             Вы сможете узнавать о новых товарах первыми и всегда
             будете в курсе новостей, акций и новинок. Подписчикам скидка 10% на все товары!
           </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Ваш email адресс" required>
+          <form class="footer-top__form" action="mail.php" method="POST">
+            <input class="footer-top__form-input" name="user_name" type="email" placeholder="Ваш email адресс" required>
             <button class="footer-top__form-btn" type="submit" >ВПЕРЁД!</button>
           </form>
         </div>
