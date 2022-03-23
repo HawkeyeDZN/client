@@ -15,8 +15,6 @@ function login(event) {
     return console.log('Не введен пароль!')
   }
   
-  
-
   fetch('https://goncharov-server.herokuapp.com/login', {
     method: 'POST',
     headers: {
@@ -29,9 +27,14 @@ function login(event) {
   })
     .then(res => res.json())
     .then(result => {
-      localStorage.setItem('token', result.token);
+
       console.log(result.status);
       console.log(result.message);
+      setTimeout(() => document.location.href = "shop.html", 2000)
     })
     console.log('Вы авторизованы успешно!');
+    name.value = '';
+    pass.value = '';
+    
+
 }

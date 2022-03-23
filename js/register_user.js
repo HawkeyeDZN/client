@@ -39,10 +39,11 @@ function register(event) {
     .then(result => {
       console.log(result)
     })
-
+    name.value = '';
+    pass.value = '';
   console.log(users)
   console.log('Вы зарегистрировались успешно!');
-  // setTimeout(() => document.location.href = "login.html", 1000)
+  setTimeout(() => document.location.href = "login.html", 2000)
  
 
 
