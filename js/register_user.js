@@ -1,6 +1,25 @@
 let name = document.getElementById('name');
 let pass = document.getElementById('password');
+let success = document.getElementById('success')
+let error = document.getElementById('error')
+let errorText = document.getElementById('error-text')
+let successText = document.getElementById('success-text')
 
+function message(bool, text) {
+
+  if (bool == true) {
+
+    success.style.display = 'block';
+    successText.innerHTML = text;
+
+  }
+  else {
+    error.style.display = 'block';
+    errorText.innerHTML = text;
+  }
+
+
+}
 
 function register(event) {
   event.preventDefault();
@@ -38,13 +57,18 @@ function register(event) {
     .then(res => res.json())
     .then(result => {
       console.log(result)
+      message(result.status, result.message);
+      setTimeout(() => document.location.href = "login.html", 4000)
+      
+      setTimeout(() => {
+        success.style.display = 'none';
+        error.style.display = 'none';
+      }, 4000)
     })
     name.value = '';
     pass.value = '';
-  console.log(users)
-  console.log('Вы зарегистрировались успешно!');
-  setTimeout(() => document.location.href = "login.html", 2000)
- 
+    
+  
 
 
 }

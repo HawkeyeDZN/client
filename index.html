@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Store</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="js\wow.min.js"></script>
   <script>
     new WOW().init();
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="container">
       <div class="header__inner">
         <a href="#" class="logo">
@@ -30,7 +30,7 @@
               <a  class="menu__list-link" href="shop.html">Магазин</a>
             </li>
             <li class="menu__list-item">
-              <a  class="menu__list-link" href="404.html">Страницы</a>
+              <a  class="menu__list-link" href="#">Страницы</a>
             </li>
             <li class="menu__list-item">
               <a  class="menu__list-link" href="#">Блог</a>
@@ -51,14 +51,64 @@
             <img class="user-nav__link-img" src="images/icons/heart.svg" alt="user icon">
             <span class="user-nav__num">3</span>
           </a>
-          <a href="shop.html" class="user-nav__link">
+          <a href="#" class="user-nav__link">
             <img class="user-nav__link-img" src="images/icons/cart.svg" alt="user icon">
             <span class="user-nav__num">7</span>
           </a>
         </div>
       </div>
     </div>
+  </header> -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav nav">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="Logo" class="logo-img">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Магазин</a></li>
+          <li class="nav__item">
+            <a href="login.html" class="nav__link">Авторизация</a></li>
+        </ul>
+        <div class="header__cart cart active" tabindex="0">
+          <div class="cart__text">
+            Корзина
+            <span class="cart__quantity">0</span>
+          </div>
+          
+          <div class="cart-content">
+            <ul class="cart-content__list" data-simplebar>
+              <!-- <li class="cart-content__item">
+                <article class="cart-content__product cart-product">
+                  <img src="images/cart/1.jpg" alt="Clothes" class="cart-product__img">
+                  <div class="cart-product__text">
+                    <h3 class="cart-product__title">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</h3>
+                    <span class="cart-product__price">
+                      190 789 ₽
+                    </span>
+                  </div>
+                  <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                </article>
+              </li> -->
+            </ul>
+            <div class="cart-content__bottom">
+              <div class="cart-content__fullprice">
+                <span>Итого:</span>
+                <span class="fullprice">0 ₽</span>
+              </div>
+              <button class="cart-content__btn btn">Перейти в корзину</button>
+            </div>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
   </header>
+
 
   <main class="main">
     <section class="top-slider animate__animated animate__fadeInDownBig">
@@ -306,10 +356,10 @@
                 </h4>
                 <div class="product-item__price">
                   <div class="product-item__new-price">
-                    79,30Br
+                    1 594 ₽
                   </div>
                   <div class="product-item__old-price">
-                    86,51Br
+                    1 848 ₽
                   </div>
                 </div>
               </div>
@@ -354,10 +404,10 @@
                 </h4>
                 <div class="product-item__price">
                   <div class="product-item__new-price">
-                    80,03Br
+                    2 853 ₽
                   </div>
                   <div class="product-item__old-price">
-                    95,51Br
+                    3 253 ₽
                   </div>
                 </div>
               </div>
@@ -402,10 +452,10 @@
                 </h4>
                 <div class="product-item__price">
                   <div class="product-item__new-price">
-                    95,80Br
+                    2 895 ₽
                   </div>
                   <div class="product-item__old-price">
-                    105,71Br
+                    2 853 ₽
                   </div>
                 </div>
               </div>
@@ -446,14 +496,14 @@
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4.5"></div>
                 <h4 class="product-item__title">
-                  Пальто "Marselesa"
+                  Блузка "Honey White"
                 </h4>
                 <div class="product-item__price">
                   <div class="product-item__new-price">
-                    96,12Br
+                    999 ₽
                   </div>
                   <div class="product-item__old-price">
-                    120,51Br
+                    1 384 ₽
                   </div>
                 </div>
               </div>
@@ -494,14 +544,14 @@
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4.5"></div>
                 <h4 class="product-item__title">
-                  Жилет "DEJABU"
+                  Блузка "Honey White"
                 </h4>
                 <div class="product-item__price">
                   <div class="product-item__new-price">
-                    130,30Br
+                    1 384 ₽
                   </div>
                   <div class="product-item__old-price">
-                    165,31Br
+                    1 703 ₽
                   </div>
                 </div>
               </div>
@@ -542,14 +592,14 @@
               <div class="product-item__box">
                 <div class="star" data-rateyo-rating="4"></div>
                 <h4 class="product-item__title">
-                  Боди "Marks & Spencer"
+                  Блузка "Honey White"
                 </h4>
                 <div class="product-item__price">
                   <div class="product-item__new-price">
-                    79,30Br
+                    2 485 ₽
                   </div>
                   <div class="product-item__old-price">
-                    86,51Br
+                    3 175 ₽
                   </div>
                 </div>
               </div>
@@ -769,7 +819,7 @@
             будете в курсе новостей, акций и новинок. Подписчикам скидка 10% на все товары!
           </p>
           <form class="footer-top__form" action="mail.php" method="POST">
-            <input class="footer-top__form-input" name="user_name" type="email" placeholder="Ваш email адресс" required>
+            <input class="footer-top__form-input" id="" type="email" placeholder="Ваш email адресс" name="user_email" required>
             <button class="footer-top__form-btn" type="submit" >ВПЕРЁД!</button>
           </form>
         </div>
@@ -791,8 +841,9 @@
 
 
 
-
+  <script src="js/simplebar.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>

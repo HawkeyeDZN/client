@@ -1,5 +1,25 @@
 let name = document.getElementById('name');
 let pass = document.getElementById('password');
+let success = document.getElementById('success')
+let error = document.getElementById('error')
+let errorText = document.getElementById('error-text')
+let successText = document.getElementById('success-text')
+
+function message(bool, text) {
+
+  if (bool == true) {
+
+    success.style.display = 'block';
+    successText.innerHTML = text;
+
+  }
+  else {
+    error.style.display = 'block';
+    errorText.innerHTML = text;
+  }
+
+
+}
 
 function login(event) {
   event.preventDefault();
@@ -28,13 +48,21 @@ function login(event) {
     .then(res => res.json())
     .then(result => {
 
-      console.log(result.status);
-      console.log(result.message);
-      setTimeout(() => document.location.href = "shop.html", 2000)
+      if (result.status == true){
+        message(result.status, result.message);
+        setTimeout(() => document.location.href = "shop.html", 5000)
+      }
+      else message(result.status, result.message);
+      
+      setTimeout(() => {
+        success.style.display = 'none';
+        error.style.display = 'none';
+      }, 4000);
     })
-    console.log('Вы авторизованы успешно!');
+
     name.value = '';
     pass.value = '';
+
     
 
 }
