@@ -50,14 +50,14 @@ function login(event) {
 
       if (result.status == true){
         message(result.status, result.message);
-        setTimeout(() => document.location.href = "shop.html", 5000)
+        setTimeout(() => document.location.href = "shop.html", 3000)
       }
       else message(result.status, result.message);
       
       setTimeout(() => {
         success.style.display = 'none';
         error.style.display = 'none';
-      }, 4000);
+      }, 3000);
     })
 
     name.value = '';

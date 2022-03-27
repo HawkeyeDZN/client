@@ -39,12 +39,9 @@ function register(event) {
 
   // else console.log('Не введен пароль!');
   
-
   let users = {
     'name': name.value,
     'pass': pass.value,
-
-
   }
 
   fetch('https://goncharov-server.herokuapp.com/register', {
@@ -58,12 +55,12 @@ function register(event) {
     .then(result => {
       console.log(result)
       message(result.status, result.message);
-      setTimeout(() => document.location.href = "login.html", 4000)
+      setTimeout(() => document.location.href = "login.html", 2000)
       
       setTimeout(() => {
         success.style.display = 'none';
         error.style.display = 'none';
-      }, 4000)
+      }, 2000)
     })
     name.value = '';
     pass.value = '';

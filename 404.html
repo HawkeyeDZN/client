@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <!-- <header class="header header--400-page">
     <div class="container">
       <div class="header__inner">
         <a href="#" class="logo">
@@ -27,7 +27,7 @@
               <a  class="menu__list-link menu__list-link--active" href="index.html">Главная</a>
             </li>
             <li class="menu__list-item">
-              <a  class="menu__list-link" href="#">Магазин</a>
+              <a  class="menu__list-link" href="shop.html">Магазин</a>
             </li>
             <li class="menu__list-item">
               <a  class="menu__list-link" href="#">Страницы</a>
@@ -117,71 +117,25 @@
 
   <main class="main">
 
-    <section class="top wow animate__animated animate__slideInRight">
-      <div class="top__container" style="background-image: url('images/top-bg.jpg');">
-        <div class="container">
-          <h2 class="top__title title">Вход</h2>
-          <div class="bredcrumbs">
-            <ul class="bredcrumbs__list">
-              <li class="bredcrumbs__item">
-                <a href="index.html" class="bredcrumbs__link">
-                  Главная
-                </a>
-              </li>
-              <li class="bredcrumbs__item">
-                <a href="login.html" class="bredcrumbs__link">
-                  Вход
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="modal wow animate__animated animate__slideInRight">
+    <section class="page-404 wow animate__animated animate__slideInRight">
       <div class="container">
-        <div class="modal__links">
-          <a class="modal__link" href="register.html">Регистрация</a>
-          <a class="modal__link modal__link--active" href="#">Вход</a>
+        <div class="page-404__inner">
+          <div class="page-404__content">
+            <h2 class="page-404__title title">
+              Упс! Произошла ошибка
+            </h2>
+            <p class="page-404__text">
+              Сожалеем, но мы не можем найти страницы, которые вы запрашиваете. Это может быть связано с тем, что вы неправильно
+              набрали веб-адрес.
+            </p>
+            <a href="index.html" class="page-404__link">НА ГЛАВНУЮ</a>
+          </div>
+          <img src="images/404.png" alt="404 images" class="page-404__img">
         </div>
-        <form class="modal__form" action="#">
-          <label class="modal__label">
-            Имя пользователя*
-            <input id="name" class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Пароль*
-            <input id="password" class="modal__input" type="password" required>
-          </label>
-          <label class="modal__label">
-            <input type="checkbox">
-            Запомнить меня
-          </label>
-          <button onclick="login(event)" class="modal__btn">ВХОД</button>
-          <a href="#" class="modal__error">Забыли свой пароль?</a>
-        </form>
       </div>
     </section>
 
   </main>
-
-  <div id="success" class="message message__success">
-    <div class="message__content">
-      <h4 class="message__title">Отлично!</h4>
-      <div class="message__point"></div>
-    </div>
-    <p id="success-text" class="message__text"></p>
-  </div>
-  
-  <div id="error" class="message message__error">
-    <div class="message__error-content">
-      <h4 class="message__error-title">Ошибка!</h4>
-      <div class="message__error-point"></div>
-    </div>
-    <p id="error-text" class="message__error-text"></p>
-  </div>
 
   <footer class="footer">
     <div class="container">
@@ -241,8 +195,9 @@
 
 
 
+
+
   <script src="js/main.min.js"></script>
-  <script src="js/login_user.js"></script>
 </body>
 
 </html>

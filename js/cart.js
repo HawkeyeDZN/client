@@ -3,6 +3,7 @@ const cartProductsList = document.querySelector('.cart-content__list');
 const cart = document.querySelector('.cart');
 const cartQuantity = document.querySelector('.cart__quantity');
 const fullPrice = document.querySelector('.fullprice');
+const buyBtn = document.querySelector('.cart-content__btn');
 let price = 0;
 
 const randomId = () => {
@@ -93,3 +94,13 @@ cartProductsList.addEventListener('click', (e) => {
     deleteProducts(e.target.closest('.cart-content__item'));
   }
 });
+
+buyBtn.addEventListener('click', (e) => {
+  fullPrice.textContent = '0 ₽';
+  cartProductsList.innerHTML = `<div></div>`
+  cartQuantity.textContent = '0';
+  alert('Спасибо за совершенную покупку!')
+  document.querySelectorAll('.product-item__btn').disabled = false;
+});
+
+
